@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eth-a-sketch</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <h1 class="name">Etch-a-sketch</h1>
+      <div class="menu">
+        <div class="container-color-picker">
+        <input
+          name="Color Picker"
+          class="color" 
+          type="color"
+          onchange="changeColor(this.value)"
+        />
+      </div>
+        <button class="picked colorMode but">Color mode</button>
+        <button class="rainbow but">Rainbow mode</button>
+        <button class="eraser but">Eraser</button>
+        <button class="reset">Clear</button>
+        <div class="set">
+          <input
+            type="text"
+            class="inputSize"
+            placeholder="Size of Board"
+            value="16"
+            onchange="changeSize(this.value)"
+          />
+          <button>Set Size</button>
+        </div>
+      </div>
+      <div class="sketch-container"></div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,94 @@
+/* Settings */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #e6e6e6;
+  color: #262626;
+}
+/* Main */
+main {
+  padding: 40px;
+}
+.name {
+  font-size: 78px;
+  text-align: center;
+}
+/* Sketch */
+.sketch-container {
+  width: 500px;
+  height: 500px;
+  background: white;
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.sketch-container div {
+  cursor: pointer;
+}
+/* Menu */
+.menu {
+  position: absolute;
+  left: 200px;
+  top: 120px;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.menu button {
+  width: 200px;
+  padding: 10px 0;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.container-color-picker {
+  width: 100px;
+  height: 100px;
+  border-radius: 150px;
+  overflow: hidden;
+}
+.color {
+  border: none;
+  padding: 0;
+  width: 200%;
+  height: 200%;
+  cursor: pointer;
+  transform: translate(-25%, -25%)  
+}
+
+.picked {
+  color: white;
+  background: #262626;
+}
+
+.set {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.set input {
+  width: 200px;
+  height: 30px;
+  margin-bottom: 5px;
+}
+
+.inputSize{
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+button:hover{
+  background-color: rgba(0, 0, 0, 0.1);
+  transform: scale(1.05);
+  transition: transform .3s;
+}
+.picked:hover{
+  background-color: rgba(0, 0, 0, 0.7);
+}
